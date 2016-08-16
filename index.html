@@ -11,15 +11,67 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+		<script src="js/wow.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.interactive_bg.js"></script>
 	</head>
 	<body>
 
+		<div class="removewow fixednav wow fadeIn" data-wow-delay="11s">
 
+      <div class="demo-4" style="margin-top:7.5px;margin-left:7.5px;">
+          <div class="column">
+  					<div id="dl-menu" class="dl-menuwrapper">
+  						<button class="dl-trigger">Open Menu</button>
+  						<ul class="dl-menu">
+  							<li>
+  								<a href="#">Home</a>
+  							</li>
+  							<li>
+  								<a href="#">About</a>
+  							</li>
+  							<li>
+  								<a href="#">Invest</a>
+  							</li>
+  							<li>
+  								<a href="#">Future Of CraftVR</a>
+  					</div><!-- /dl-menuwrapper -->
+  				</div>
+  			</div>
+
+      <img src="img/CraftVRpure.png" class="removewow wow slideInUp" data-wow-delay="11s" style="position:absolute;height:65%;display:block;top:0;left:0;
+  right:0;
+  bottom:0;
+  margin:auto;" />
+    </div>
 
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAFe.js"></script>
 		<script src="js/demo-1.js"></script>
+
+		<script src="js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-3', classout : 'dl-animate-out-3' }
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			$(".bg").interactive_bg();
+			$(window).resize(function() {
+		 $(".bg > .ibg-bg").css({
+			 width: $(window).outerWidth(),
+			 height: $(window).outerHeight()
+		 })
+	})
+		</script>
 	</body>
 </html>
